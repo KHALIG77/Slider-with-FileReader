@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./Js/index.js" defer></script>
+  </head>
+  <body>
+    <div class="modal d-none">
+      <h4>Sekil slidea elave olundu !!!!</h4>
+    </div>
+
+    <div class="upload-file">
+      <input type="file" id="file-upload" />
+      <input type="button" value="Upload Photo" class="input-btn" />
+    </div>
+
+    <div id="slider-container">
+      <div id="back">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+
+      <div id="slider">
+        <div
+          class="slide"
+          style="background-image: url(./assets/images/Flutter.jpeg)"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url(./assets/images/Swift.jpg)"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url(./assets/images/kotlin.png)"
+        ></div>
+      </div>
+
+      <div id="next">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+
+    <div class="photo-show">
+      <div><img src="./assets/images/Flutter.jpeg" alt="" /></div>
+      <div><img src="./assets/images/Swift.jpg" alt="" /></div>
+      <div><img src="./assets/images/kotlin.png" alt="" /></div>
+    </div>
+  </body>
+</html>
